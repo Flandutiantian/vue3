@@ -8,6 +8,7 @@
     </div>
 </template>
 <style lang="scss" scoped>
+
 .topnav {
     background: pink;
     display: flex;
@@ -28,4 +29,5 @@
         }
     }
 }
+
 </style>
