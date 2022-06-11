@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 $h: 22px;
 $h2: $h - 4px;
 
@@ -30,6 +31,9 @@ button {
     border-radius: $h/2;
     position: relative;
 
+button:hover>span {
+        left: calc(100% - #{$h2} - 2px);
+    }
     >span {
         position: absolute;
         top: 2px;
