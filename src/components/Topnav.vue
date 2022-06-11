@@ -9,32 +9,30 @@
     </div>
 </template>
 <script lang="ts">
-import { inject, Ref } from "vue"
+import { inject, Ref } from "vue";
 export default {
-  
-  setup(){
-    const menuVisible = inject<Ref<boolean>>('menuVisible') // get
-    const toggleMenu = ()=>{
-        menuVisible.value = !menuVisible.value;
-    }
+    setup() {
+        const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
+        const toggleMenu = () => {
+            menuVisible.value = !menuVisible.value;
+        };
         return { toggleMenu };
-    }
-}
+    },
+};
 </script>
-
 <style lang="scss" scoped>
-
-
-
- export default {
 .topnav {
     background: pink;
     display: flex;
     padding: 16px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10;
     justify-content: center;
     align-items: center;
+
     >.logo {
         max-width: 6em;
         margin-right: auto;
@@ -49,32 +47,30 @@ export default {
             margin: 0 1em;
         }
     }
-           >.toggleAside {
-               width: 24px;
-               height: 24px;
-               background: red;
-               position: absolute;
-               left: 16px;
-               top: 50%;
-               transform: translateY(-50%);
-                display: none;
-           }
-    
-        
+
+    >.toggleAside {
+        width: 24px;
+        height: 24px;
+        background: red;
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+    @media (max-width: 500px) {
+        >.menu {
+            display: none;
+        }
+
+        >.logo {
+            margin: 0 auto;
+        }
+
+        >.toggleAside {
+            display: inline-block;
+        }
+    }
 }
-  >.toggleMenu {}
-  @media (max-width: 500px) {
-      >.menu {
-          display: none;
-      }
-
-      >.logo {
-          margin: 0 auto;
-      }
-
-      >.toggleAside {
-          display: inline-block;
-      }
-  }
- }
 </style>
