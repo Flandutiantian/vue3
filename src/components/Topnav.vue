@@ -1,18 +1,18 @@
 <template>
     <div class="topnav">
-        <div class="logo">
+        <router-link to="/" class="logo">
             <svg class="icon">
                 <use xlink:href="#icon-king"></use>
             </svg>
-        </div>
-        <ul class="menu">
-            <li>
-                <router-link to="/doc">文档</router-link>
-            </li>
-        </ul>
-        <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
-            <use xlink:href="#icon-menu"></use>
-        </svg>
+    </router-link>
+    <ul class="menu">
+        <li>
+            <router-link to="/doc">文档</router-link>
+        </li>
+    </ul>
+    <svg v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
     </div>
 </template>
 <script lang="ts">
