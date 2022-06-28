@@ -1,5 +1,5 @@
 <template>
-    <article>
+    <article class="markdown-body">
         <h1>
             开始使用
         </h1>
@@ -19,8 +19,8 @@
              export default {
                components: {Button}
              }
-&lt;/script&gt;
- </code></pre>
+            &lt;/script&gt;
+        </code></pre>
 
     </article>
 </template>
