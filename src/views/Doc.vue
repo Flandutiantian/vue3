@@ -37,6 +37,7 @@
         </div>
     </div>
 </template>
+
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
 import {
@@ -44,6 +45,9 @@ import {
     Ref
 } from "vue";
 export default {
+    components: {
+        Topnav
+    },
     setup() {
         const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
         return {
@@ -52,9 +56,9 @@ export default {
     },
 };
 </script>
+
 <style lang="scss" scoped>
-
-
+$aside-index : 10;
 
 .layout {
     display: flex;
@@ -99,6 +103,7 @@ aside {
     left: 0;
     padding-top: 70px;
     height: 100%;
+    z-index: $aside-index;
 
     >h2 {
         margin-bottom: 4px;
@@ -107,16 +112,15 @@ aside {
 
     >ol {
         >li {
-            padding: 4px 0;
             >a {
-                    display: block;
-                    padding: 4px 16px;
-                    text-decoration: none;
-                }
-            
-                .router-link-active {
-                    background: white;
-                }
+                display: block;
+                padding: 4px 16px;
+                text-decoration: none;
+            }
+
+            .router-link-active {
+                background: white;
+            }
         }
     }
 }

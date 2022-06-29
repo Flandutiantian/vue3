@@ -1,5 +1,5 @@
 Arguments: 
-  D:\DTT\nodejs\node.exe D:\DTT\bin\yarn.js install
+  D:\DTT\nodejs\node.exe D:\DTT\bin\yarn.js dev
 
 PATH: 
   D:\sofeware\Comder\vendor\git-for-windows\mingw64\bin;D:\sofeware\Comder\vendor\git-for-windows\usr\bin;C:\Users\86173\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\DTT\bin;D:\DTT\nodejs;C:\Users\86173\AppData\Local\Microsoft\WindowsApps;D:\program files\Microsoft VS Code\bin;C:\Users\86173\AppData\Local\Yarn\bin;C:\Users\86173\AppData\Roaming\npm
