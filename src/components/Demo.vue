@@ -16,8 +16,8 @@
 
 <script lang="ts">
 import Button from '../lib/Button.vue'
-import 'prismjs';
-import 'prismjs/themes/prism.css'
+import 'prismjs'
+
 import {
     computed,
     ref
@@ -46,6 +46,10 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+ @import 'prismjs/themes/prism.css';
+</style>
 
 <style lang="scss" scoped>
 $border-color: #d9d9d9;

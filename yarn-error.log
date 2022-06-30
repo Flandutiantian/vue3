@@ -1,5 +1,5 @@
 Arguments: 
-  D:\DTT\nodejs\node.exe D:\DTT\bin\yarn.js dev
+  D:\DTT\nodejs\node.exe D:\DTT\bin\yarn.js add prismjs
 
 PATH: 
   D:\sofeware\Comder\vendor\git-for-windows\mingw64\bin;D:\sofeware\Comder\vendor\git-for-windows\usr\bin;C:\Users\86173\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;D:\DTT\bin;D:\DTT\nodejs;C:\Users\86173\AppData\Local\Microsoft\WindowsApps;D:\program files\Microsoft VS Code\bin;C:\Users\86173\AppData\Local\Yarn\bin;C:\Users\86173\AppData\Roaming\npm
@@ -14,12 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: D:\代码\vue3\package.json: Unexpected token y in JSON at position 187
-      at JSON.parse (<anonymous>)
-      at D:\DTT\lib\cli.js:1625:59
+  TypeError: Invalid number of spaces
+      at tokenise (D:\DTT\lib\cli.js:63317:17)
+      at tokenise.next (<anonymous>)
+      at Parser.next (D:\DTT\lib\cli.js:63423:28)
+      at Parser.parse (D:\DTT\lib\cli.js:63471:30)
+      at Parser.parse (D:\DTT\lib\cli.js:63547:26)
+      at Parser.parse (D:\DTT\lib\cli.js:63547:26)
+      at parse (D:\DTT\lib\cli.js:63647:21)
+      at module.exports.exports.default (D:\DTT\lib\cli.js:63209:96)
+      at Function.<anonymous> (D:\DTT\lib\cli.js:3064:63)
       at Generator.next (<anonymous>)
-      at step (D:\DTT\lib\cli.js:310:30)
-      at D:\DTT\lib\cli.js:321:13
 
 npm manifest: 
   {
@@ -31,7 +36,8 @@ npm manifest:
     },
     "dependencies": {
       "github-markdown-css": "^4.0.0",
-      "marked": "^1.1.1",yarn 
+      "marked": "^1.1.1",
+      "prismjs": "^1.21.0",
       "vue": "^3.0.0-rc.1",
       "vue-router": "4.0.0-beta.3"
     },

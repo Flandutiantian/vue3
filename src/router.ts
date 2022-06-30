@@ -6,9 +6,6 @@ import ButtonDemo from "./components/ButtonDemo.vue";
 import DialogDemo from "./components/DialogDemo.vue";
 import TabsDemo from "./components/TabsDemo.vue";
 
-import { h } from 'vue';
-import Markdown from './components/Markdown.vue';
-
 
 import { h } from 'vue';
 import Markdown from './components/Markdown.vue';
