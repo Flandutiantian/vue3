@@ -2,7 +2,7 @@
     <div class="topnav">
         <router-link to="/" class="logo">
             <svg class="icon">
-                <use xlink:href="#icon-king"></use>
+                <use xlink:href="#icon-ku01"></use>
             </svg>
     </router-link>
     <ul class="menu">
@@ -35,6 +35,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+
 .topnav {
     background: rgb(62, 133, 243);
     color:white;
@@ -44,7 +45,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     justify-content: center;
     align-items: center;
 
@@ -62,6 +63,7 @@ export default {
         white-space: nowrap;
         flex-wrap: nowrap;
 
+
         >li {
             margin: 0 1em;
         }
@@ -73,11 +75,15 @@ export default {
         top: 50%;
         transform: translateY(-50%);
         display: none;
+        width:30px;
+        height:30px;
+        background: rgba(0, 0, 0, .15);
     }
 
     @media (max-width: 500px) {
         >.menu {
             display: none;
+          
         }
 
         >.logo {

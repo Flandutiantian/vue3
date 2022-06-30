@@ -58,6 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 $aside-index : 10;
 
 .layout {
@@ -95,7 +96,7 @@ $aside-index : 10;
 }
 
 aside {
-    background: lightblue;
+    background: rgb(228, 239, 254);
     width: 150px;
     padding: 16px 0;
     position: fixed;
@@ -114,7 +115,7 @@ aside {
         >li {
             >a {
                 display: block;
-                padding: 4px 16px;
+                padding: 8px 16px;
                 text-decoration: none;
             }
 
